@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publish a design — Rivaayat</title>
+  <link rel="icon" href="assets/brand-emblem.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="publish">
+  <div id="site-header"></div>
+  <div class="wrap page-hero">
+    <p class="eyebrow">Shop owners</p>
+    <h1>Publish a jewellery design</h1>
+    <p class="muted">Saved in this browser and listed in the catalogue. For a live city-wide listing, register so the desk can verify the shop.</p>
+  </div>
+  <section class="section" style="padding-top:8px">
+    <div class="wrap">
+      <form class="panel form two" id="publish-form">
+        <label>Shop
+          <select name="shopId" id="pub-shop" required></select>
+        </label>
+        <label>Design name<input name="name" required placeholder="e.g. Temple haar"></label>
+        <label>Category
+          <select name="category">
+            <option value="gold">Gold</option>
+            <option value="diamond">Diamond</option>
+            <option value="bridal">Bridal</option>
+            <option value="polki">Polki</option>
+            <option value="silver">Silver</option>
+            <option value="temple">Temple</option>
+          </select>
+        </label>
+        <label>Type
+          <select name="type">
+            <option>Necklace</option>
+            <option>Earrings</option>
+            <option>Bangles</option>
+            <option>Rings</option>
+            <option>Pendant</option>
+            <option>Set</option>
+            <option>Nath</option>
+            <option>Anklet</option>
+            <option>Bracelet</option>
+          </select>
+        </label>
+        <label>Metal<input name="metal" value="Gold"></label>
+        <label>Purity
+          <select name="purity">
+            <option>22K</option>
+            <option>18K</option>
+            <option>24K</option>
+            <option>Silver</option>
+            <option>Platinum</option>
+          </select>
+        </label>
+        <label>Weight (g)<input name="weight" type="number" step="0.1" required></label>
+        <label>Making %<input name="makingPct" type="number" step="0.1" placeholder="shop default"></label>
+        <label>Wastage %<input name="wastagePct" type="number" step="0.1"></label>
+        <label>Stone charges<input name="stoneCharges" type="number" value="0"></label>
+        <label>Occasion
+          <select name="occasion">
+            <option>Daily Wear</option>
+            <option>Wedding</option>
+            <option>Festive</option>
+            <option>Office</option>
+            <option>Gift</option>
+          </select>
+        </label>
+        <label>For
+          <select name="gender">
+            <option>Women</option>
+            <option>Men</option>
+            <option>Kids</option>
+            <option>Unisex</option>
+          </select>
+        </label>
+        <label>Photo (local asset)
+          <select name="image">
+            <option value="cat-gold.png">Gold bangles</option>
+            <option value="prod-temple-haar.png">Temple haar</option>
+            <option value="prod-gold-jhumka.png">Jhumkas</option>
+            <option value="prod-mangalsutra.png">Mangalsutra</option>
+            <option value="prod-diamond-necklace.png">Diamond necklace</option>
+            <option value="prod-bridal-set.png">Bridal set</option>
+            <option value="prod-chandbali.png">Chandbali</option>
+            <option value="prod-gold-chain.png">Chain</option>
+            <option value="cat-silver.png">Silver</option>
+            <option value="cat-polki.png">Polki</option>
+          </select>
+        </label>
+        <label style="grid-column:1/-1">Description<textarea name="description" required></textarea></label>
+        <div style="grid-column:1/-1"><button class="btn btn-wine" type="submit">Publish to catalogue</button></div>
+      </form>
+    </div>
+  </section>
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

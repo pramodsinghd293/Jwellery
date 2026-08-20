@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register as a seller — Rivaayat</title>
+  <link rel="icon" href="assets/brand-emblem.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="seller">
+  <div id="site-header"></div>
+  <div class="wrap page-hero">
+    <p class="eyebrow">For shop owners without a website</p>
+    <h1>Register your jewellery shop</h1>
+    <p class="muted">Choose a storefront design, send your details to the desk, and start publishing catalogue pieces. We onboard independent jewellers — not marketplaces that warehouse gold.</p>
+  </div>
+  <section class="section" style="padding-top:8px" id="themes">
+    <div class="wrap">
+      <div class="theme-grid" id="theme-grid">
+        <div class="theme-card theme-heritage"><p class="kicker">Temple &amp; 22K</p><h3>Heritage Gold</h3><p>Wine, gold borders, serif type.</p></div>
+        <div class="theme-card theme-lumina"><p class="kicker">Solitaires</p><h3>Lumina Diamond</h3><p>Black velvet, ice type.</p></div>
+        <div class="theme-card theme-suhag"><p class="kicker">Trousseau</p><h3>Suhag Bridal</h3><p>Blush silk, rose gold.</p></div>
+        <div class="theme-card theme-noor"><p class="kicker">Daily wear</p><h3>Noor Contemporary</h3><p>Ivory, champagne, quiet.</p></div>
+      </div>
+
+      <form class="panel form two" id="seller-form" style="margin-top:32px">
+        <h2 style="grid-column:1/-1">Shop details</h2>
+        <p class="muted" style="grid-column:1/-1">On submit, a mail draft opens to <b>developersoftware.support@gmail.com</b>. The shop is also saved in this browser so you can preview the storefront immediately.</p>
+        <label>Shop name<input name="name" required placeholder="e.g. Kanakshree Jewellers"></label>
+        <label>Area / market<input name="area" required placeholder="e.g. 10 No. Market, Arera Colony"></label>
+        <label>City<input name="city" value="Bhopal" required></label>
+        <label>Full address<input name="address" required></label>
+        <label>Phone / WhatsApp<input name="phone" required placeholder="+91 755 …"></label>
+        <label>Email<input name="email" type="email" required></label>
+        <label>Established (year)<input name="since" type="number" value="2000"></label>
+        <label>Specialty (comma separated)<input name="specialty" placeholder="Gold, Bridal, Temple"></label>
+        <label>Storefront design
+          <select name="theme" id="seller-theme">
+            <option value="heritage">Heritage Gold</option>
+            <option value="lumina">Lumina Diamond</option>
+            <option value="suhag">Suhag Bridal</option>
+            <option value="noor">Noor Contemporary</option>
+          </select>
+        </label>
+        <label>Usual making %<input name="makingPct" type="number" value="12"></label>
+        <label>Usual wastage %<input name="wastagePct" type="number" value="2"></label>
+        <label>Hours<input name="hours" value="11:00 AM – 8:30 PM"></label>
+        <label style="grid-column:1/-1">About the shop<textarea name="about" required placeholder="Karigars, hallmark, what you are known for."></textarea></label>
+        <div style="grid-column:1/-1" class="btn-row">
+          <button class="btn btn-wine" type="submit">Send registration to the desk</button>
+          <a class="btn btn-ghost" href="publish.html">I already registered — publish a design</a>
+        </div>
+      </form>
+      <div id="seller-done" style="margin-top:16px" hidden></div>
+    </div>
+  </section>
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

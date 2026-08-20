@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rivaayat — Independent jewellers of Bhopal</title>
+  <meta name="description" content="Gold, diamond and bridal jewellery from independent Bhopal shops. Filter designs, calculate making and GST, and order directly with the jeweller.">
+  <link rel="icon" href="assets/brand-emblem.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+
+  <section class="hero">
+    <div class="hero-slide on"><img src="assets/hero-bridal.png" alt="Bridal gold haar"></div>
+    <div class="hero-slide"><img src="assets/hero-diamond.png" alt="Diamond necklace"></div>
+    <div class="hero-slide"><img src="assets/hero-model.png" alt="Bridal jewellery on silk"></div>
+    <div class="hero-copy">
+      <p class="kicker">Bhopal · 20 August 2026</p>
+      <h1>Jewellery from the shop that made it.</h1>
+      <p>Independent goldsmiths and diamond houses publish their catalogues here. You filter, calculate making and GST, then talk to the jeweller yourself.</p>
+      <div class="btn-row">
+        <a class="btn btn-gold" href="catalogue.html">Browse jewellery</a>
+        <a class="btn btn-ghost" href="seller.html" style="color:#fff;border-color:#c6a15b">Register your shop</a>
+      </div>
+    </div>
+    <div class="hero-nav">
+      <button type="button" data-hero-prev aria-label="Previous">‹</button>
+      <button type="button" data-hero-next aria-label="Next">›</button>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Shop by metal &amp; mood</p>
+          <h2>Six ways in</h2>
+        </div>
+        <a class="btn btn-ghost" href="catalogue.html">All designs</a>
+      </div>
+      <div class="cat-grid" id="cat-grid"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Editor’s edit</p>
+          <h2>Featured this week</h2>
+        </div>
+      </div>
+      <div class="prod-grid" id="featured-grid"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap calc-band">
+      <img src="assets/rates-mood.png" alt="Gold rates still life">
+      <div class="calc-copy">
+        <p class="kicker">Live with the jeweller</p>
+        <h2>Making, wastage and GST — itemised.</h2>
+        <p>Pick a local shop, enter the weight, and see metal value, making, 3% GST on gold and 5% GST on making before you walk in.</p>
+        <a class="btn btn-gold" href="calculator.html">Open calculator</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Most ordered</p>
+          <h2>Bestsellers</h2>
+        </div>
+        <a class="btn btn-ghost" href="catalogue.html?best=1">View all</a>
+      </div>
+      <div class="prod-grid" id="best-grid"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Trusted on the street</p>
+          <h2>Jewellers near you</h2>
+        </div>
+        <a class="btn btn-ghost" href="stores.html">Directory</a>
+      </div>
+      <div class="shop-grid" id="shop-grid"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" id="themes">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">For shop owners</p>
+          <h2>Four storefront designs</h2>
+        </div>
+        <a class="btn btn-wine" href="seller.html">Register as a seller</a>
+      </div>
+      <p class="muted" style="max-width:640px;margin:-12px 0 28px">You do not need a developer. Choose Heritage Gold, Lumina Diamond, Suhag Bridal or Noor Contemporary. We publish your catalogue on that design.</p>
+      <div class="theme-grid" id="theme-grid"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">From clients</p>
+          <h2>What Bhopal says</h2>
+        </div>
+      </div>
+      <div class="quote-grid" id="quotes"></div>
+    </div>
+  </section>
+
+  <div class="modal-back" id="welcome-modal">
+    <div class="modal" role="dialog" aria-label="Welcome">
+      <img src="assets/cat-bridal.png" alt="Bridal jewellery">
+      <div class="modal-body">
+        <button class="modal-close" type="button" data-close-modal aria-label="Close">×</button>
+        <p class="eyebrow">New on Rivaayat</p>
+        <h2>Shops without a website, finally online.</h2>
+        <p>Jewellers publish designs. Clients calculate making and GST, then order with the shop — WhatsApp, call or mail.</p>
+        <div class="btn-row">
+          <a class="btn btn-wine" href="seller.html">Register your shop</a>
+          <button class="btn btn-ghost" type="button" data-close-modal>Browse as a client</button>
+        </div>
+        <p class="muted" style="margin-top:14px">Desk: developersoftware.support@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
